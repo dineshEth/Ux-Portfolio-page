@@ -1,0 +1,467 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Handlee', cursive;
+    color: $text-primary;
+}
+
+ul{
+    list-style: none;
+}
+
+.heading{
+    font-size: $font-primary;
+}
+
+.description{
+    font-size: $font-secondary;
+}
+
+.btn {
+    text-align: center;
+    min-width:10rem; 
+    padding: 0.3rem .5rem;
+    color: $pink;
+    border: 0.2rem solid $pink;
+    border-radius: .5rem;
+    font-weight: 800;
+    font-size: $text-secondary;
+}
+.btn--primary{
+    background-color: $pink;
+    color:$text-secondary;
+}
+
+
+.header{
+    padding:1rem 5rem;
+    background-color: $bg-gray;
+    width: 100%;
+
+}
+
+.header 
+.header__nav{
+        @include flexbox(row,space-between,center);
+        background-color: #fff;
+        padding:0.4rem 1rem;
+
+        .nav__logo
+        {
+            @include flexbox(row,center,center);
+            @include gap(0, 0.3rem);
+            cursor: pointer;
+
+            .nav__img{
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $text-primary;
+                border-radius: 100%;
+
+            }
+
+            .nav__name{
+                font-size:$font-primary;
+                font-weight: 900;
+            }
+        }
+
+        .nav__links
+        {
+            @include flexbox(row ,space-between, center);
+            @include gap(0, 1.5rem);
+
+            .nav__link{
+                font-size: $font-secondary - 0.3rem;
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+            .nav__link--active{
+                opacity: 1;
+            }
+            .nav__link--disabled{
+                cursor: not-allowed;
+                opacity: 0.5;
+            }
+
+            @media  (max-width:60rem) {
+                display: none;
+            }
+        }
+
+        .nav__socials-links{
+            @include flexbox(row ,space-between, center);
+            @include gap(0, 1.5rem);
+
+            // .nav__social{
+            //     border-radius:3px;
+            //     width: 1.5rem;
+            //     height: 1.5rem;
+            //     background-color: $text-primary;
+            // }
+        }
+
+        .nav__menu{
+            display: none;
+        }
+
+        @media screen and (max-width:40rem) {
+            .nav__socials-links{
+                display: none;
+            }
+            .nav__menu{
+                display: block;
+            }
+        }
+}
+
+.header
+.header__hero{
+    width: 100%;
+    padding: 10rem 0rem;
+    @include flexbox(row,center, center);
+
+    @media screen and (max-width:40rem) {
+        padding: 2rem 0rem;    
+    }
+
+    .hero__left{
+        width: 60%;
+        padding: 0 2rem;
+        @include flexbox(row,center,center);
+
+
+        .hero__image_background{
+            background-color: $text-primary;
+            width: 50%;
+            // height:400px;
+            overflow: hidden;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+            border-bottom-left-radius: 40%;
+    
+            img{
+                height: 100%;
+            }
+        }
+    }
+    
+
+    .hero__right{
+        padding: 2rem;
+        width: 40%;
+        @include flexbox(column,start, start);
+        @include gap(1rem,0);
+
+        .hero__heading{
+            font-size: $font-large-primary;
+            word-spacing: 1rem;
+        }
+        .hero__description{
+            color: $text-primary;
+            font-size: $font-secondary;
+        }
+
+        .hero__buttons{
+            @include flexbox(row,start,center);
+            @include gap;
+
+            @media screen and (max-width:40rem) {
+                @include flexbox(column,start,start);
+                @include gap;
+            }
+        }
+    }
+    @media  screen and (max-width:60rem) {
+        @include flexbox(column,center,center);
+
+
+        .hero__left{
+            width: 100%;
+            @include flexbox(column,center,center);
+
+            .hero__image_background{
+                width: 80%;
+                background-size: cover;
+            }
+
+        }
+        .hero__right{
+            width: 100%;
+        }
+    }
+    
+}
+
+.main{
+    padding:1rem 5rem;
+    background-color: $bg-white;
+    width: 100%;
+}
+
+.main .main__about{
+    padding: 5rem 0;
+    @include flexbox(column,center, space-between);
+    @include gap(10rem, 2rem);
+    flex-wrap: wrap;
+
+    .main__intro{
+        @include flexbox(row,space-between,stretch);
+        padding: 0.3rem 0;
+        gap: 2rem 0rem;
+
+
+        .main__leftcontainer{
+            width: 40%;
+
+        }
+        .main__rightcontainer{
+            @include flexbox(column,space-between,stretch); 
+            gap: 1rem;
+            width: 45%;
+
+            .main__skill-bar{
+                @include flexbox(column,start,start);
+
+                input{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .main__skills{
+        @include flexbox(row,space-between,center);
+        flex-wrap: wrap;
+
+        .skill{
+            @include flexbox(column,center,center);
+            text-align: center;
+            width: 20rem;
+        }
+    }
+
+    @media screen and (max-width:40rem) {
+        padding: 2rem 1rem;
+
+        .main__intro{
+            @include flexbox(column,space-between,stretch);
+        
+            .main__leftcontainer,.main__rightcontainer{
+                width: 100%;
+            }  
+        } 
+        .main__skills{
+            gap: 2rem 0;
+            justify-content: center;
+            .skill{
+                width: 60%;
+            }
+        }
+    } 
+}
+
+.main .main__projects{
+    padding: 5rem 0;
+
+    .project__header{
+        @include flexbox(row,space-between,center);
+        padding: 5rem 0;
+
+    }
+
+    .projects{
+        @include flexbox(column,center,center);
+        @include gap(2rem,1rem);
+
+        .projects__project{
+            @include flexbox(row,space-between,stretch);
+            padding: 0 5rem;
+            overflow-y: hidden;
+            
+            .project__leftcontainer{
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                .center{
+                     // margin:2rem auto;
+                    padding: 2rem;
+                    @include flexbox(column,start,start);
+                    @include gap(2rem,0);
+                    
+                } 
+            }
+
+            .project__rightcontainer{
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                width: 60%;
+
+                img{
+                    position: relative;
+                    top: 5rem;
+                    width: 100%;
+                }
+            }
+        }
+
+        .direction--left-right{
+            flex-direction: row;
+        }
+
+        .direction--right-left{
+            flex-direction: row-reverse;
+        }
+
+        .projects__project--blue{
+            background-color: $bg-blue;
+
+        }
+        .projects__project--pink{
+            background-color: $bg-pink;
+            
+        }
+        .projects__project--violet{
+            background-color: $bg-violet;
+            
+        }
+    }
+
+    @media screen and (max-width:50rem){
+        padding: 2rem 0;
+
+        .project__header{
+            @include flexbox(column,space-between,start);
+            gap:1rem 0;
+
+        }
+
+        .projects {
+            .projects__project{
+                @include flexbox(column-reverse,center,center);
+                padding:2rem;
+                @include gap(2rem,0);
+
+                .project__leftcontainer{
+                    width: 100%;
+                    display: block;
+
+                    .center{
+                       padding: 0;
+                    ;
+                       @include gap(1rem,0); 
+                       
+                   } 
+                }
+                .project__rightcontainer{
+                    width: 100%;
+
+                    img{
+                        position: relative;
+                        top: 0rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+.main .main__contact{
+    @include flexbox(row,start,stretch);
+    background-color: $bg-pink;
+    padding: 4rem;
+    margin: 10rem 0;
+
+    .contact__leftcontainer{
+        width: 50%;
+
+        .heading,.description{
+            width: 60%;
+        }
+    }
+    .contact__form{
+        width: 50%;
+        @include flexbox(column,space-between,start);
+        .formdata{
+            width: 100%;
+            @include flexbox(column,space-between,start);
+            gap: 1rem 2rem;
+            
+            input,textarea{
+                border-radius: 0.5rem;
+                height: 3rem;
+                width: 100%;
+                outline: none;
+                border: none;
+                padding: .4rem .5rem;
+                text-align: start;
+                font-size: $font-secondary;
+                // display: inline-block;
+            }
+            .message{
+                height: 7rem;
+                resize: none;
+            }
+        }
+    }
+
+    @media screen and (max-width:40rem) {
+        margin: 1rem 0;
+
+        @include flexbox(column,start,start);
+        padding: 2rem;
+        gap: 2rem 0;
+
+        .contact__leftcontainer{
+            width: 100%;
+    
+            .heading,.description{
+                width: 100%;
+            }
+        }
+
+        .contact__form{
+            width: 100%;
+
+        }   
+    }
+}
+
+.footer{
+    padding: 1rem;
+    background-color: $text-primary;
+    @include flexbox(column,center,center);
+    gap: 2rem;
+    height: 10rem;
+
+    p{
+        color: $bg-white;
+    }
+
+    .footer__socials-links{
+        @include flexbox(row ,center, center);
+        @include gap(0, 1.5rem);
+        
+    }
+}
+
+
+@media screen and (max-width:40rem) {
+    .header{
+        padding: 0;
+    }
+    .main{
+        padding: 0.5rem;
+    }
+}

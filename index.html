@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>UI/UX Developer - Design , Figma Developer</title>
+</head>
+<body>
+    <!-- -------------------HEADER---------------------- -->
+    <header class="header">
+        <!-- -----------------NAVBAR--------------- -->
+        <nav class="header__nav">
+            <div class="nav__logo">
+                <img src="./asset/profile-1.jpg" alt="" class="nav__img">
+                <span class="nav__name">UXDOX</span>
+            </div>
+            <ul class="nav__links">
+                <li class="nav__link nav__link--active">Home</li>
+                <li class="nav__link nav__link">Services</li>
+                <li class="nav__link nav__link">Projects</li>
+                <li class="nav__link nav__link--disabled">Blog</li>
+                <li class="nav__link nav__link">Contact Us</li>
+            </ul>
+            <ul class="nav__socials-links">
+                <a href="http://"><li class="nav__social">
+                    <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11_373)">
+                    <path d="M13.6669 40C17.3469 40 20.3336 37.0133 20.3336 33.3333V26.6666H13.6669C9.98683 26.6666 7.00009 29.6533 7.00009 33.3333C7.00009 37.0133 9.98683 40 13.6669 40Z" fill="#0ACF83"/>
+                    <path d="M7.00009 20C7.00009 16.32 9.98683 13.3332 13.6669 13.3332H20.3336V26.6665H13.6669C9.98683 26.6667 7.00009 23.68 7.00009 20Z" fill="#A259FF"/>
+                    <path d="M7.00009 6.66672C7.00009 2.98672 9.98683 0 13.6669 0H20.3336V13.3333H13.6669C9.98683 13.3333 7.00009 10.3467 7.00009 6.66672Z" fill="#F24E1E"/>
+                    <path d="M20.3332 0H27C30.68 0 33.6668 2.98672 33.6668 6.66672C33.6668 10.3467 30.68 13.3333 27 13.3333H20.3332V0Z" fill="#FF7262"/>
+                    <path d="M33.6668 20C33.6668 23.68 30.68 26.6667 27 26.6667C23.32 26.6667 20.3332 23.68 20.3332 20C20.3332 16.32 23.32 13.3332 27 13.3332C30.68 13.3332 33.6668 16.32 33.6668 20Z" fill="#1ABCFE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11_373">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></li>
+                </a>
+                <a href="http://"><li class="nav__social">
+                    <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_8_287)">
+                        <path d="M37.0472 0H2.95278C2.16965 0 1.4186 0.311096 0.864849 0.864849C0.311096 1.4186 0 2.16965 0 2.95278V37.0472C0 37.8303 0.311096 38.5814 0.864849 39.1352C1.4186 39.6889 2.16965 40 2.95278 40H37.0472C37.8303 40 38.5814 39.6889 39.1352 39.1352C39.6889 38.5814 40 37.8303 40 37.0472V2.95278C40 2.16965 39.6889 1.4186 39.1352 0.864849C38.5814 0.311096 37.8303 0 37.0472 0ZM11.9222 34.075H5.90833V14.9722H11.9222V34.075ZM8.91111 12.325C8.22894 12.3212 7.56319 12.1153 6.99789 11.7335C6.43259 11.3516 5.99307 10.8109 5.7348 10.1795C5.47652 9.54808 5.41108 8.85432 5.54672 8.18576C5.68236 7.5172 6.013 6.90379 6.49693 6.42297C6.98085 5.94214 7.59636 5.61544 8.26578 5.4841C8.9352 5.35276 9.62852 5.42266 10.2583 5.68498C10.888 5.9473 11.4259 6.39028 11.8041 6.95802C12.1823 7.52576 12.3839 8.19282 12.3833 8.875C12.3898 9.33172 12.3042 9.78506 12.1317 10.208C11.9592 10.6309 11.7033 11.0148 11.3793 11.3368C11.0553 11.6587 10.6697 11.9121 10.2457 12.0819C9.82167 12.2517 9.36778 12.3344 8.91111 12.325ZM34.0889 34.0917H28.0778V23.6556C28.0778 20.5778 26.7694 19.6278 25.0806 19.6278C23.2972 19.6278 21.5472 20.9722 21.5472 23.7333V34.0917H15.5333V14.9861H21.3167V17.6333H21.3944C21.975 16.4583 24.0083 14.45 27.1111 14.45C30.4667 14.45 34.0917 16.4417 34.0917 22.275L34.0889 34.0917Z" fill="#0A66C2"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_8_287">
+                        <rect width="40" height="40" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </li></a>
+                <a href="http://"><li class="nav__social">
+                    <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11_312)">
+                    <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.624992 20 0.624992C9.29946 0.624992 0.624969 9.29948 0.624969 20C0.624969 30.7005 9.29946 39.375 20 39.375Z" fill="#EA4C89"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C8.95876 0 -3.05176e-05 8.95879 -3.05176e-05 20C-3.05176e-05 31.0413 8.95876 40 20 40C31.0195 40 40 31.0413 40 20C40 8.95879 31.0195 0 20 0ZM33.2104 9.21909C35.5965 12.1258 37.0282 15.8351 37.0716 19.8481C36.5076 19.7398 30.8676 18.59 25.1844 19.3059C25.0542 19.0239 24.9457 18.7201 24.8156 18.4165C24.4685 17.5923 24.0781 16.7463 23.6876 15.9436C29.9782 13.384 32.8416 9.69632 33.2104 9.21909ZM20 2.95011C24.3384 2.95011 28.308 4.57701 31.3232 7.24513C31.0195 7.67897 28.4381 11.128 22.3644 13.4056C19.5661 8.26464 16.4642 4.0564 15.987 3.40564C17.2667 3.10195 18.6117 2.95011 20 2.95011ZM12.7332 4.55531C13.1887 5.16269 16.2256 9.39263 19.0672 14.4251C11.0846 16.551 4.03468 16.5076 3.27546 16.5076C4.38175 11.2148 7.96092 6.81128 12.7332 4.55531ZM2.9067 20.0218C2.9067 19.8481 2.9067 19.6746 2.9067 19.5011C3.64422 19.5228 11.9306 19.6313 20.4555 17.0716C20.9545 18.026 21.41 19.0021 21.8439 19.9783C21.6269 20.0434 21.3882 20.1085 21.1714 20.1735C12.3644 23.0151 7.67894 30.7809 7.28847 31.4316C4.57697 28.4165 2.9067 24.4035 2.9067 20.0218ZM20 37.0933C16.052 37.0933 12.4078 35.7484 9.52275 33.4924C9.82644 32.8634 13.2971 26.1823 22.9284 22.82C22.9717 22.7983 22.9935 22.7983 23.0369 22.7766C25.4446 29.0021 26.4209 34.2299 26.6811 35.7266C24.6204 36.616 22.3644 37.0933 20 37.0933ZM29.5227 34.1649C29.3492 33.1236 28.4381 28.1345 26.2039 21.9956C31.5619 21.1496 36.2472 22.538 36.833 22.7333C36.0955 27.4838 33.3622 31.5835 29.5227 34.1649Z" fill="#C32361"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11_312">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li></a>
+                <a href="http://"><li class="nav__social">
+                    <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.095 11.9679C35.1105 12.3199 35.1105 12.6559 35.1105 13.0079C35.1259 23.68 27.2851 36 12.9464 36C8.7173 36 4.56539 34.736 1 32.368C1.61738 32.448 2.23477 32.48 2.85215 32.48C6.35581 32.48 9.76686 31.264 12.5297 29.008C9.19578 28.944 6.2632 26.688 5.24452 23.392C6.41755 23.632 7.62145 23.584 8.76361 23.248C5.13647 22.512 2.52803 19.1999 2.51259 15.3439C2.51259 15.3119 2.51259 15.2799 2.51259 15.2479C3.59301 15.8719 4.81235 16.2239 6.04712 16.2559C2.63607 13.8879 1.57108 9.16791 3.63932 5.4719C7.60601 10.5279 13.4403 13.5839 19.7067 13.9199C19.0739 11.1199 19.9383 8.17591 21.9602 6.1919C25.0934 3.13589 30.0325 3.2959 32.9959 6.54391C34.7401 6.1919 36.4224 5.5199 37.9504 4.5759C37.3639 6.44791 36.1446 8.03191 34.524 9.03991C36.0674 8.84791 37.58 8.41591 39 7.77591C37.9504 9.40792 36.6231 10.8159 35.095 11.9679Z" fill="#1D9BF0"/>
+                    </svg>
+                </li></a>
+            </ul>
+            <span class="material-symbols-outlined nav__menu">
+                menu
+            </span>
+        </nav>
+        <!-- ------------------HERO-SECTION--------------- -->
+        <section class="header__hero">
+            <div class="hero__left">
+                <img class="hero__image_background" src="./asset/profile-6.jpg" alt="profile">
+            </div>
+            <div class="hero__right">
+                <h1 class="hero__heading">I'm User Inteface Designer & Developer</h1>
+                <p class="hero__description">Hello I'm Rojiox, a freelance user interface desginer & developer based in zurich. I'm very passionate about my work that I do. </p>
+                <div class="hero__buttons">
+                    <div class="btn btn--primary">See MY works</div>
+                    <div class="btn ">Contact Us</div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ------------------MAIN SECTION-------------- -->
+    <main class="main">
+        <!-- ------------ABOUT SECTION----------- -->
+        <section class="main__about">
+            <div class="main__intro">
+                <div class="main__leftcontainer">
+                    <h1 class="heading">What I do?</h1>
+                    <p class="description"> I play a crucial role in bringing design concepts to life through coding, focusing on creating visually appealing and user-friendly interfaces. My work involves collaboration with cross-functional teams, integrating user feedback, and staying updated with industry trends to deliver high-quality digital experiences.</p>
+                </div>
+                <div class="main__rightcontainer">
+                    <div class="main__skill-bar">
+                        <label for="Web Design">Web Design</label>
+                         <input type="range" min="0" max="100" value="100" name="Web Design" id="Design">
+                    </div>
+                    <div class="main__skill-bar">
+                        <label for="Web Design">Mobile Design</label>
+                         <input type="range" min="0" max="100" value="80" name="Web Design" id="Design">
+                    </div>
+                    <div class="main__skill-bar">
+                        <label for="Web Design">Development</label>
+                         <input type="range" min="0" max="100" value="90" name="Web Design" id="Design">
+                    </div>
+                    <div class="main__skill-bar">
+                        <label for="Web Design">SEO</label>
+                         <input type="range" min="0" max="100" value="80" name="Web Design" id="Design">
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------SKILLS----------------- -->
+            <div class="main__skills">
+                <div class="skill skill--WebDesign">
+                    <img width="50" src="./asset/mail_6190967.png" alt="">
+                    <h1 class="heading">Web Design</h1>
+                    <p class="description">Web design is an ever-evolving field that requires a combination of creativity, technical skills, and a user-centric mindset</p>
+                </div>
+                <div  class="skill skills--MobileDesign">
+                    <img width="50" src="./asset/edit_1976154.png" alt="">
+                    <h1 class="heading">Mobile Design</h1>
+                    <p class="description">Mobile design focuses on creating user interfaces and experiences specifically tailored for mobile devices, such as smartphones and tablets.</p>
+                </div>
+                <div  class="skill skills--WebDesign">
+                    <img width="50" src="./asset/job-promotion_9631184.png" alt="">
+                    <h1 class="heading">Development</h1>
+                    <p class="description">Throughout the entire project development process, effective communication, collaboration, and adaptability are crucial. </p>
+                </div>
+                <div class="skill skills--WebDesign">
+                    <img width="50" src="./asset/search-engine_2166964.png" alt="">
+                    <h1 class="heading">SEO</h1>
+                    <p class="description">SEO is an ongoing process that requires continuous effort and adaptation to changing search engine algorithms. </p>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------PROJECT SECTION------------ -->
+        <section class="main__projects">
+            <!-- ----------------Project Header------------- -->
+            <div class="project__header">
+                <div class="projects__title">
+                    <h1 class="heading">Latest Projects</h1>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, inventore?</p>
+                </div>
+                <button class="btn btn--primary">See All Projects</button>
+            </div>
+            <!-- -------------Projects List------------ -->
+            <div class="projects">
+                <!-- --------PROJECT-1----------- -->
+                <div class="projects__project projects__project--blue direction--left-right">
+                    <div class="project__leftcontainer">
+                        <div class="center">
+                            <h3 class="project__type">Web Design</h3>
+                            <h1 title="Snowlake Theme" class="heading">Web3 Payment App</h1>
+                            <p class="description">Building a payment app on the Web3 (Web3.0) technology stack involves leveraging decentralized and blockchain-based solutions to enable secure, transparent, and efficient transactions. Building a Web3 payment app requires expertise in blockchain development, smart contract programming, and a strong understanding of decentralized technologies. 
+                            </p>
+                            <p class="project__view-link">View Project</p>
+                        </div>
+                    </div>
+                    <div class="project__rightcontainer">
+                        <img src="./asset/project-1.png" alt="project-image">
+                    </div>
+                </div>
+                <div class="projects__project projects__project--pink direction--right-left">
+                    <div class="project__leftcontainer">
+                        <div class="center">
+                            <h3 class="project__type">Web Design</h3>
+                            <h1 title="Snowlake Theme" class="heading">Builder Web</h1>
+                            <p class="description">Creating a builder's app involves developing a digital solution tailored for professionals in the construction and building industry. Such an app can streamline various tasks, enhance collaboration, and improve overall efficiency. Building a builder's app requires collaboration with professionals in the construction industry to ensure that the app addresses real-world needs.
+                            </p>
+                            <p class="project__view-link">View Project</p>
+                        </div>
+                    </div>
+                    <div class="project__rightcontainer">
+                        <img src="./asset/project-2.png" alt="project-image">
+                    </div>
+                </div>
+                <div class="projects__project projects__project--violet direction--left-right">
+                    <div class="project__leftcontainer">
+                        <div class="center">
+                            <h3 class="project__type">Development</h3>
+                            <h1 title="Snowlake Theme" class="heading">Faceswapper AI</h1>
+                            <p class="description">A face-swapper AI, also known as a facial reenactment or face swapping technology, is an artificial intelligence application that can replace one person's face in an image or video with the face of another person. These technologies use computer vision and deep learning algorithms to detect and manipulate facial features in a realistic manner. 
+                            </p>
+                            <p class="project__view-link">View Project</p>
+                        </div>
+                    </div>
+                    <div class="project__rightcontainer">
+                        <img src="./asset/project-3.png" alt="project-image">
+                    </div>
+                </div>
+                <div class="projects__project projects__project--blue direction--right-left">
+                    <div class="project__leftcontainer ">
+                        <div class="center">
+                            <h3 class="project__type">Mobile Design</h3>
+                            <h1 title="Snowlake Theme" class="heading">Travel App</h1>
+                            <p class="description">Building a travel app requires thorough planning, a user-centric approach, and a focus on providing valuable features to enhance the traveler's experience. Collaborate with travel industry partners and continuously iterate on your app based on user feedback and changing trends.
+                            </p>
+                            <p class="project__view-link">View Project </p>
+                        </div>
+                    </div>
+                    <div class="project__rightcontainer">
+                        <img src="./asset/project-4.png" alt="project-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------CONTACT FORM------------- -->
+        <section class="main__contact">
+            <div class="contact__leftcontainer ">
+                <img width="50" src="./asset//message_7313413.png" alt="message-image">
+                <h1 class="heading">If you like what you see, Let's work together.</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum repudiandae placeat cum dolore cumque temporibus quo ratione, alias harum!</p>
+            </div>
+            <form class="contact__form" action="">
+                <div class="formdata">
+                    <input type="text" class="name" name="name" placeholder="Name">
+                    <input type="email" class="email" name="email" placeholder="email@gmail.com">
+                    <textarea name="" id="" class="message"  placeholder="Message"></textarea>
+
+                    <!-- <textarea type="text" class="message" name="message" placeholder="Message"> </textarea> -->
+                    <div class="btn">Send Message</div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- --------------------FOOTER---------------------- -->
+    <footer class="footer">
+        <ul class="footer__socials-links">
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.993 1C15.2746 1.00245 10.7109 2.6736 7.11804 5.71464C3.52513 8.75568 1.13726 12.9683 0.381404 17.5993C-0.374455 22.2302 0.550977 26.9775 2.99224 30.9922C5.43351 35.007 9.23141 38.0274 13.7068 39.5135C14.6942 39.6967 15.0661 39.0848 15.0661 38.5645C15.0661 38.0441 15.0463 36.5355 15.0397 34.8862C9.51058 36.0807 8.34223 32.553 8.34223 32.553C7.44044 30.2623 6.13714 29.6601 6.13714 29.6601C4.33357 28.4362 6.27209 28.4591 6.27209 28.4591C8.26983 28.5999 9.31971 30.4979 9.31971 30.4979C11.0904 33.5183 13.9701 32.6446 15.1023 32.1341C15.28 30.8546 15.7967 29.9841 16.3661 29.49C11.9493 28.9925 7.30879 27.2974 7.30879 19.725C7.28142 17.7611 8.01434 15.8619 9.35591 14.4203C9.15186 13.9229 8.47057 11.9136 9.55008 9.1844C9.55008 9.1844 11.2187 8.65427 15.0167 11.2101C18.2744 10.3242 21.7115 10.3242 24.9692 11.2101C28.7639 8.65427 30.4293 9.1844 30.4293 9.1844C31.5121 11.9071 30.8308 13.9164 30.6267 14.4203C31.9726 15.8621 32.707 17.7646 32.6771 19.7315C32.6771 27.3203 28.0267 28.9925 23.6034 29.4801C24.3143 30.0954 24.9495 31.2964 24.9495 33.142C24.9495 35.7862 24.9264 37.9132 24.9264 38.5645C24.9264 39.0913 25.2852 39.7066 26.2923 39.5135C30.7682 38.0273 34.5665 35.0063 37.0077 30.9908C39.4489 26.9754 40.3739 22.2274 39.6172 17.596C38.8604 12.9647 36.4714 8.75199 32.8773 5.71147C29.2832 2.67095 24.7185 1.0009 19.9995 1H19.993Z" fill="#191717"/>
+                    <path d="M7.64403 29.3754C7.60125 29.4736 7.44327 29.503 7.31491 29.4343C7.18656 29.3656 7.09112 29.238 7.1372 29.1365C7.18327 29.0351 7.33796 29.0089 7.46631 29.0776C7.59467 29.1463 7.6934 29.2772 7.64403 29.3754Z" fill="#191717"/>
+                    <path d="M8.45041 30.2688C8.38226 30.3029 8.30428 30.3125 8.22983 30.2957C8.15538 30.279 8.0891 30.2371 8.04231 30.1772C7.91396 30.0397 7.88761 29.8499 7.98635 29.7648C8.08508 29.6797 8.26282 29.719 8.39118 29.8565C8.51953 29.9939 8.54915 30.1837 8.45041 30.2688Z" fill="#191717"/>
+                    <path d="M9.23364 31.4043C9.11186 31.4894 8.90451 31.4043 8.78932 31.2341C8.75747 31.2036 8.73214 31.167 8.71483 31.1265C8.69753 31.086 8.6886 31.0425 8.6886 30.9985C8.6886 30.9545 8.69753 30.911 8.71483 30.8705C8.73214 30.83 8.75747 30.7934 8.78932 30.7629C8.91109 30.6811 9.11845 30.7629 9.23364 30.9298C9.34883 31.0967 9.35212 31.3192 9.23364 31.4043Z" fill="#191717"/>
+                    <path d="M10.2968 32.5039C10.1881 32.625 9.96764 32.5922 9.78662 32.4286C9.60561 32.265 9.56281 32.0425 9.67142 31.9246C9.78003 31.8068 10.0005 31.8396 10.1881 31.9999C10.3757 32.1603 10.4119 32.3861 10.2968 32.5039Z" fill="#191717"/>
+                    <path d="M11.7876 33.1453C11.7382 33.2991 11.5144 33.3678 11.2906 33.3023C11.0668 33.2369 10.9187 33.0536 10.9615 32.8965C11.0043 32.7395 11.2314 32.6675 11.4585 32.7395C11.6856 32.8115 11.8304 32.9849 11.7876 33.1453Z" fill="#191717"/>
+                    <path d="M13.4136 33.2565C13.4136 33.4169 13.2293 33.5543 12.9924 33.5576C12.7554 33.5609 12.5612 33.43 12.5612 33.2696C12.5612 33.1093 12.7455 32.9718 12.9825 32.9686C13.2194 32.9653 13.4136 33.0929 13.4136 33.2565Z" fill="#191717"/>
+                    <path d="M14.9274 33.0046C14.957 33.1649 14.7924 33.3318 14.5555 33.3711C14.3185 33.4104 14.1111 33.3155 14.0815 33.1584C14.0519 33.0013 14.223 32.8311 14.4534 32.7886C14.6838 32.7461 14.8977 32.8442 14.9274 33.0046Z" fill="#191717"/>
+                    </svg></li>
+            </a>
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5624 20.3795C22.5624 26.664 17.5116 31.7586 11.2814 31.7586C5.05121 31.7586 0 26.6629 0 20.3795C0 14.0961 5.05083 9 11.2814 9C17.5119 9 22.5624 14.095 22.5624 20.3795Z" fill="black"/>
+                    <path d="M34.938 20.3795C34.938 26.295 32.4126 31.0924 29.2973 31.0924C26.182 31.0924 23.6566 26.295 23.6566 20.3795C23.6566 14.464 26.1816 9.66657 29.2969 9.66657C32.4122 9.66657 34.9376 14.4624 34.9376 20.3795" fill="black"/>
+                    <path d="M40 20.3795C40 25.6784 39.1119 29.9766 38.0161 29.9766C36.9203 29.9766 36.0327 25.6795 36.0327 20.3795C36.0327 15.0795 36.9207 10.7824 38.0161 10.7824C39.1115 10.7824 40 15.0791 40 20.3795Z" fill="black"/>
+                    </svg></li>
+            </a>
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11_373)">
+                <path d="M13.6669 40C17.3469 40 20.3336 37.0133 20.3336 33.3333V26.6666H13.6669C9.98683 26.6666 7.00009 29.6533 7.00009 33.3333C7.00009 37.0133 9.98683 40 13.6669 40Z" fill="#0ACF83"/>
+                <path d="M7.00009 20C7.00009 16.32 9.98683 13.3332 13.6669 13.3332H20.3336V26.6665H13.6669C9.98683 26.6667 7.00009 23.68 7.00009 20Z" fill="#A259FF"/>
+                <path d="M7.00009 6.66672C7.00009 2.98672 9.98683 0 13.6669 0H20.3336V13.3333H13.6669C9.98683 13.3333 7.00009 10.3467 7.00009 6.66672Z" fill="#F24E1E"/>
+                <path d="M20.3332 0H27C30.68 0 33.6668 2.98672 33.6668 6.66672C33.6668 10.3467 30.68 13.3333 27 13.3333H20.3332V0Z" fill="#FF7262"/>
+                <path d="M33.6668 20C33.6668 23.68 30.68 26.6667 27 26.6667C23.32 26.6667 20.3332 23.68 20.3332 20C20.3332 16.32 23.32 13.3332 27 13.3332C30.68 13.3332 33.6668 16.32 33.6668 20Z" fill="#1ABCFE"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_11_373">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg></li>
+            </a>
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8_287)">
+                    <path d="M37.0472 0H2.95278C2.16965 0 1.4186 0.311096 0.864849 0.864849C0.311096 1.4186 0 2.16965 0 2.95278V37.0472C0 37.8303 0.311096 38.5814 0.864849 39.1352C1.4186 39.6889 2.16965 40 2.95278 40H37.0472C37.8303 40 38.5814 39.6889 39.1352 39.1352C39.6889 38.5814 40 37.8303 40 37.0472V2.95278C40 2.16965 39.6889 1.4186 39.1352 0.864849C38.5814 0.311096 37.8303 0 37.0472 0ZM11.9222 34.075H5.90833V14.9722H11.9222V34.075ZM8.91111 12.325C8.22894 12.3212 7.56319 12.1153 6.99789 11.7335C6.43259 11.3516 5.99307 10.8109 5.7348 10.1795C5.47652 9.54808 5.41108 8.85432 5.54672 8.18576C5.68236 7.5172 6.013 6.90379 6.49693 6.42297C6.98085 5.94214 7.59636 5.61544 8.26578 5.4841C8.9352 5.35276 9.62852 5.42266 10.2583 5.68498C10.888 5.9473 11.4259 6.39028 11.8041 6.95802C12.1823 7.52576 12.3839 8.19282 12.3833 8.875C12.3898 9.33172 12.3042 9.78506 12.1317 10.208C11.9592 10.6309 11.7033 11.0148 11.3793 11.3368C11.0553 11.6587 10.6697 11.9121 10.2457 12.0819C9.82167 12.2517 9.36778 12.3344 8.91111 12.325ZM34.0889 34.0917H28.0778V23.6556C28.0778 20.5778 26.7694 19.6278 25.0806 19.6278C23.2972 19.6278 21.5472 20.9722 21.5472 23.7333V34.0917H15.5333V14.9861H21.3167V17.6333H21.3944C21.975 16.4583 24.0083 14.45 27.1111 14.45C30.4667 14.45 34.0917 16.4417 34.0917 22.275L34.0889 34.0917Z" fill="#0A66C2"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_8_287">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </li></a>
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11_312)">
+                <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.624992 20 0.624992C9.29946 0.624992 0.624969 9.29948 0.624969 20C0.624969 30.7005 9.29946 39.375 20 39.375Z" fill="#EA4C89"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C8.95876 0 -3.05176e-05 8.95879 -3.05176e-05 20C-3.05176e-05 31.0413 8.95876 40 20 40C31.0195 40 40 31.0413 40 20C40 8.95879 31.0195 0 20 0ZM33.2104 9.21909C35.5965 12.1258 37.0282 15.8351 37.0716 19.8481C36.5076 19.7398 30.8676 18.59 25.1844 19.3059C25.0542 19.0239 24.9457 18.7201 24.8156 18.4165C24.4685 17.5923 24.0781 16.7463 23.6876 15.9436C29.9782 13.384 32.8416 9.69632 33.2104 9.21909ZM20 2.95011C24.3384 2.95011 28.308 4.57701 31.3232 7.24513C31.0195 7.67897 28.4381 11.128 22.3644 13.4056C19.5661 8.26464 16.4642 4.0564 15.987 3.40564C17.2667 3.10195 18.6117 2.95011 20 2.95011ZM12.7332 4.55531C13.1887 5.16269 16.2256 9.39263 19.0672 14.4251C11.0846 16.551 4.03468 16.5076 3.27546 16.5076C4.38175 11.2148 7.96092 6.81128 12.7332 4.55531ZM2.9067 20.0218C2.9067 19.8481 2.9067 19.6746 2.9067 19.5011C3.64422 19.5228 11.9306 19.6313 20.4555 17.0716C20.9545 18.026 21.41 19.0021 21.8439 19.9783C21.6269 20.0434 21.3882 20.1085 21.1714 20.1735C12.3644 23.0151 7.67894 30.7809 7.28847 31.4316C4.57697 28.4165 2.9067 24.4035 2.9067 20.0218ZM20 37.0933C16.052 37.0933 12.4078 35.7484 9.52275 33.4924C9.82644 32.8634 13.2971 26.1823 22.9284 22.82C22.9717 22.7983 22.9935 22.7983 23.0369 22.7766C25.4446 29.0021 26.4209 34.2299 26.6811 35.7266C24.6204 36.616 22.3644 37.0933 20 37.0933ZM29.5227 34.1649C29.3492 33.1236 28.4381 28.1345 26.2039 21.9956C31.5619 21.1496 36.2472 22.538 36.833 22.7333C36.0955 27.4838 33.3622 31.5835 29.5227 34.1649Z" fill="#C32361"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_11_312">
+                <rect width="40" height="40" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </li></a>
+            <a href="http://"><li class="footer__social">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.095 11.9679C35.1105 12.3199 35.1105 12.6559 35.1105 13.0079C35.1259 23.68 27.2851 36 12.9464 36C8.7173 36 4.56539 34.736 1 32.368C1.61738 32.448 2.23477 32.48 2.85215 32.48C6.35581 32.48 9.76686 31.264 12.5297 29.008C9.19578 28.944 6.2632 26.688 5.24452 23.392C6.41755 23.632 7.62145 23.584 8.76361 23.248C5.13647 22.512 2.52803 19.1999 2.51259 15.3439C2.51259 15.3119 2.51259 15.2799 2.51259 15.2479C3.59301 15.8719 4.81235 16.2239 6.04712 16.2559C2.63607 13.8879 1.57108 9.16791 3.63932 5.4719C7.60601 10.5279 13.4403 13.5839 19.7067 13.9199C19.0739 11.1199 19.9383 8.17591 21.9602 6.1919C25.0934 3.13589 30.0325 3.2959 32.9959 6.54391C34.7401 6.1919 36.4224 5.5199 37.9504 4.5759C37.3639 6.44791 36.1446 8.03191 34.524 9.03991C36.0674 8.84791 37.58 8.41591 39 7.77591C37.9504 9.40792 36.6231 10.8159 35.095 11.9679Z" fill="#1D9BF0"/>
+                </svg>
+            </li></a>
+        </ul>
+        <p class="description">© 2023-2024 UXDOX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
